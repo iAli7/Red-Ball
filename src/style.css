@@ -1,0 +1,43 @@
+body{
+  background-color: #eee;
+}
+
+.app {
+  width: 1280px;
+  height: 600px;
+  background: rgb(24, 13, 13);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  position: relative;
+}
+
+.app-wrapper{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  height: 100%;
+  width: 100%;
+}
+
+.circle{
+  background: #fff;
+  height: 32px;
+  width: 32px;
+  border-radius: 100%;
+  position: relative;
+}
+
+.circle::before{
+  content: "";
+  left: 50%;
+  top: 50%;
+  height: 40px;
+  width: 40px;
+  background: rgb(222, 32, 32);
+  filter: blur(1rem);
+  position: absolute;
+  transform: translate(-50%,-50%);
+}
